@@ -13,7 +13,6 @@
 
 .item {
   display: flex;
-  /* justify-content: start; */
   align-items: center;
 
   width: 160px;
@@ -26,8 +25,7 @@
 
 .status {
   display: block;
-  /* justify-content: start;
-  align-items: start; */
+
   margin-right: 5px;
   padding: 15px;
   border-radius: 50%;
