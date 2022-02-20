@@ -1,4 +1,5 @@
 import s from './TransactionHistory.module.css';
+import propTypes from 'prop-types';
 
 export default function TransactionHistory({ transactions }) {
   return (
@@ -24,3 +25,6 @@ export default function TransactionHistory({ transactions }) {
     </div>
   );
 }
+TransactionHistory.propTypes = {
+  transactions: propTypes.node,
+};

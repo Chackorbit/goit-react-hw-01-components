@@ -1,4 +1,5 @@
 import s from './Statistic.module.css';
+import propTypes from 'prop-types';
 
 function randomColor() {
   let r =
@@ -31,3 +32,8 @@ export default function Statistic({ title, items }) {
     </section>
   );
 }
+
+Statistic.propTypes = {
+  title: propTypes.array,
+  items: propTypes.node,
+};

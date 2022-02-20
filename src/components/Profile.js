@@ -1,4 +1,5 @@
 import s from './Profile.module.css';
+import propTypes from 'prop-types';
 
 export default function Profile(props) {
   return (
@@ -27,3 +28,6 @@ export default function Profile(props) {
     </div>
   );
 }
+Profile.propTypes = {
+  props: propTypes.node,
+};

@@ -1,4 +1,5 @@
 import s from './FriendList.module.css';
+import propTypes from 'prop-types';
 
 export default function FriendList({ friends }) {
   return (
@@ -23,3 +24,7 @@ export default function FriendList({ friends }) {
     </ul>
   );
 }
+
+FriendList.propTypes = {
+  friends: propTypes.node,
+};
