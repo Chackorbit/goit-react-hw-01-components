@@ -11,13 +11,13 @@ import TransactionHistory from './transaction/TransactionHistory';
 export default function App() {
   return (
     <div>
-      <Profile
+      {/* <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-      />
+      /> */}
 
       <Statistic title="Upload stats" items={data} />
       <FriendList friends={friends} />
