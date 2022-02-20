@@ -14,7 +14,7 @@ export default function App() {
       {/* <Profile
         username={user.username}
         tag={user.tag}
-        location={user.location}
+        location={user.location}    
         avatar={user.avatar}
         stats={user.stats}
       /> */}
