@@ -26,5 +26,5 @@ export default function TransactionHistory({ transactions }) {
   );
 }
 TransactionHistory.propTypes = {
-  transactions: propTypes.node,
+  transactions: propTypes.array,
 };

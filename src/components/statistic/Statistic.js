@@ -1,19 +1,12 @@
 import s from './Statistic.module.css';
 import propTypes from 'prop-types';
-
-function randomColor() {
-  let r =
-    '#' +
-    (Math.random().toString(16) + '000000').substring(2, 8).toUpperCase() +
-    '80';
-  return r;
-}
+import randomColor from 'utils/randomColor';
 
 export default function Statistic({ title, items }) {
   return (
     <section className={s.statistics}>
       <div className={s.containertitle}>
-        <h2 className={s.title}>{title}</h2>
+        {title && <h2 className={s.title}>{title}</h2>}
       </div>
       <ul className={s.statList}>
         {items.map(item => (
@@ -34,6 +27,6 @@ export default function Statistic({ title, items }) {
 }
 
 Statistic.propTypes = {
-  title: propTypes.array,
-  items: propTypes.node,
+  title: propTypes.string,
+  items: propTypes.array,
 };
